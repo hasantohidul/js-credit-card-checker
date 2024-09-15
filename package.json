@@ -1,0 +1,31 @@
+{
+  "name": "js-credit-card-checker",
+  "version": "1.0.0",
+  "description": "A simple JavaScript to validate credit card numbers using the Luhn algorithm. Built as part of Codecademy's Front End Engineer Challenge Project.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hasantohidul/js-todo-app.git"
+  },
+  "keywords": [
+    "\"credit",
+    "card\"",
+    "\"validator\"",
+    "\"javascript\""
+  ],
+  "author": "Mohammad Tohidul Hasan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hasantohidul/js-todo-app/issues"
+  },
+  "homepage": "https://github.com/hasantohidul/js-todo-app#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
