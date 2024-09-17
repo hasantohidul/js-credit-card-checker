@@ -1,5 +1,13 @@
 // Luhn algorithm to validate a credit card number
 function validateCred(creditCardNumber) {
+  // Check whether the input is an array or it is an empty array
+  if (!Array.isArray(creditCardNumber) || creditCardNumber.length === 0) {
+    throw new Error('Invalid input: credit card number must be a non-empty array of digits');
+  }
+
+  if (!creditCardNumber.every(Number.isInteger)) {
+    throw new Error('Invalid input: credit card number must be a non-empty array of digits');
+  }
   let sum = 0;
   const cardLength = creditCardNumber.length;
   const isEvenLength = cardLength % 2 === 0;
