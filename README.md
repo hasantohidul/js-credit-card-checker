@@ -10,7 +10,7 @@ A simple and efficient JavaScript utility for validating credit card number usin
 - [Testing](#testing)
 - [License](#license)
 
-## Installation\
+## Installation
 
 To use the project locally, clone the repository and install necessary dependencies:
 
