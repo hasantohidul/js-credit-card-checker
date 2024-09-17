@@ -14,18 +14,18 @@ describe("validateCred", () => {
     })
 
     test('should throw an error for empty input', () => {
-        expect(validateCred([])).toThrow('Invalid input: credit card number must be a non-empty array of digits');
+        expect(() => validateCred([])).toThrow('Invalid input: credit card number must be a non-empty array of digits');
     })
 
     test('should throw an error for non-array input', () => {
-        expect(validateCred('')).toThrow('Invlid input: credit card number must be a non-empty array of digits');
-        expect(validateCred(null)).toThrow('Invalid input: credit card number must be a non-empty array of digits');
-        expect(validateCred(undefined)).toThrow('Invalid input: credit card number must be a non-empty array of digits');
+        expect(() => validateCred('')).toThrow('Invalid input: credit card number must be a non-empty array of digits');
+        expect(() => validateCred(null)).toThrow('Invalid input: credit card number must be a non-empty array of digits');
+        expect(() => validateCred(undefined)).toThrow('Invalid input: credit card number must be a non-empty array of digits');
     })
 
     test('should throw an error for non-numeric input', () => {
         const nonNumericCard = [a, f, d, l];
-        expect(validateCred(nonNumericCard)).toThrow('Invalid input: credit card number must be a non-empty array of digits');
+        expect(() => validateCred(nonNumericCard)).toThrow('Invalid input: credit card number must be a non-empty array of digits');
     })
 })
 
