@@ -24,7 +24,7 @@ describe("validateCred", () => {
     })
 
     test('should throw an error for non-numeric input', () => {
-        const nonNumericCard = [a, f, d, l];
+        const nonNumericCard = ['a', 'f', 'd', 3];
         expect(() => validateCred(nonNumericCard)).toThrow('Invalid input: credit card number must be a non-empty array of digits');
     })
 })
