@@ -8,6 +8,7 @@ A simple and efficient JavaScript utility for validating credit card number usin
 - [Usage](#usage)
 - [Features](#features)
 - [Testing](#testing)
+- [Project Structure](#project-structure)
 - [License](#license)
 
 ## Installation
@@ -50,6 +51,23 @@ Run unit tests using Jest
 
 ```bash
 npm test
+```
+
+## Project Structure
+```markdown
+js-credit-card-checker/
+├── .gitignore             # Specifies files to ignore in version control
+├── LICENSE                # Project's MIT license
+├── README.md              # Project documentation
+├── src/
+│   ├── cardData.js        # Contains sample valid and invalid card numbers
+│   ├── cardValidator.js   # Implements the Luhn algorithm for validating credit card numbers
+│   └── index.js           # Main entry point for running the validation logic
+├── test/
+│   └── cardValidator.test.js  # Unit tests for card validation functions using Jest
+├── package.json           # Project metadata, dependencies, and scripts
+├── package-lock.json      # Lock file for npm dependencies
+
 ```
 
 ## License
